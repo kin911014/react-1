@@ -15,20 +15,21 @@ export default class header extends React.Component {
             <p>ShareEditor.Md</p>
           </div>
         </div>
-
-        <form className="search-form" action="">
-          <div className="search">
-            <input
-              type="text"
-              name="input-search"
-              className="input-search"
-              placeholder="검색어를 입력하세요"
-            />
-            <button type="submit" className="search-submit" value="검색">
-              <i className="fas fa-hashtag"></i>
-            </button>
-          </div>
-        </form>
+        <div className="search_div">
+          <form className="search-form" action="">
+            <div className="search">
+              <input
+                type="text"
+                name="input-search"
+                className="input-search"
+                placeholder="검색어를 입력하세요"
+              />
+              <button type="submit" className="search-submit" value="검색">
+                <i className="fas fa-hashtag"></i>
+              </button>
+            </div>
+          </form>
+        </div>
 
         <div className="right-header">
           <HeaderAddMemo />
