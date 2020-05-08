@@ -8,7 +8,7 @@ export default class Profile extends React.Component {
           onClick={(e) => e.stopPropagation()}
         >
           <div className="inner_profile-header">
-            <h1>프로필 정보</h1>
+            <h1 className="profile_h1">프로필 정보</h1>
           </div>
           <div className="inner_form-container">
             <input
@@ -46,10 +46,15 @@ export default class Profile extends React.Component {
               name="email"
               id="email"
             ></input>
-            <button className="profile_btns">수정</button>
-            <button className="profile_btns" onClick={this.props.closePopup}>
-              취소
-            </button>
+            <div className="profile_btns">
+              <button className="profile_confirm-btn">수정</button>
+              <button
+                className="profile_cancel-btn"
+                onClick={this.props.closePopup}
+              >
+                취소
+              </button>
+            </div>
           </div>
         </div>
       </div>

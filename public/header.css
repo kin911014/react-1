@@ -25,56 +25,85 @@
 .popup-profile_inner {
   background: white;
   margin: auto;
-  width: 40%;
-  height: 60%;
+  width: 100%;
+  max-width: 40%;
+  height: 28.125rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.inner_form-container,
-.inner_profile-header {
+.inner_profile-header,
+.inner_form-container {
   border: 1px solid black;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  max-width: 70%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   /* 가로 중앙에 자식을 배치 */
   justify-content: center;
   /* 세로에서 가운데에 자식을 배치 */
-  /* 
-  width: 100%;
-  max-width: 24rem; */
 }
 
 .inner_profile-header {
-  /* color: #4e73df;
-  margin: 1rem auto;
-  color: red;
-  height: 15%;
-  margin-bottom: 1rem;
-  margin-top: 1rem; */
-}
-.inner_form-container {
-  /* margin: 0rem, 2rem;
-  height: 80%; */
+  height: 13%;
 }
 
-/* input.profile_input {
+.profile_h1 {
+  color: #4e73df;
   margin: auto;
-  border: 1px;
-  height: 2.3125rem;
+}
+
+.inner_form-container {
+  height: 70%;
+}
+
+input.profile_input {
+  height: 11%;
+  width: 80%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0.25rem;
+  border: none;
+  /*
   max-width: 20rem;
   width: 100%;
   display: flex;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border-radius: 0.25rem;
+  */
 }
 input.profile_input:not(:last-child) {
-  margin-bottom: 1.5625rem;
+  margin-bottom: 5%;
 }
 
-button.profile_btns {
-  height: 2.3125rem;
-} */
+.profile_confirm-btn,
+.profile_cancel-btn {
+  height: 100%;
+  width: 40%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0.25rem;
+  border: none;
+  color: white;
+}
+
+.profile_btns {
+  height: 11%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_confirm-btn {
+  background-color: #3498db;
+  margin-right: 10%;
+}
+
+.profile_cancel-btn {
+  background-color: #ea232c;
+}
