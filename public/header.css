@@ -1,0 +1,72 @@
+/* header btn */
+.header-memo_btn,
+.header-profile__icon,
+.header-bell__icon {
+  border: 0;
+  background-color: #fff;
+}
+
+/* header profile */
+.popup-profile {
+  position: fixed;
+
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.inner_form-container,
+.inner_profile-header {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*세로 중앙에 자식을 배치*/
+  justify-content: center; /*가로에서 가운데에 자식을 배치*/
+}
+.popup-profile_inner {
+  position: absolute;
+  min-width: 15rem; /**/
+  left: 31%;
+  right: 31%;
+  top: 14%;
+  bottom: 14%;
+  /* margin: auto; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner_profile-header {
+  color: #4e73df;
+  height: 3rem;
+  max-width: 24rem;
+  width: 100%;
+}
+.inner_form-container {
+  margin: 0rem, 2rem;
+  height: 70%;
+  display: flex;
+  flex-direction: block;
+  max-width: 24rem;
+  width: 100%;
+}
+input.profile_input {
+  border: 1px;
+  height: 2.3125rem;
+  max-width: 20rem;
+  width: 100%;
+  display: flex;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 0.25rem;
+}
+input.profile_input:not(:last-child) {
+  margin-bottom: 1.5625rem;
+}
