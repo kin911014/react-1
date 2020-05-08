@@ -1,4 +1,74 @@
+.header {
+  width: 100%;
+  display: flex;
+  /* 5.8 수정, 메인 헤더 padding수정  */
+  padding: 10px 0 3px 0;
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.2);
+  flex-flow: row nowrap;
+  background-color: #f5f5f5;
+}
+
 /*//////////////header-right////////////////////*/
+.dropdown-menu a {
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  width: 10rem;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  margin-top: 1.8rem;
+  text-align: center;
+  right: auto;
+  bottom: auto;
+  top: 0px;
+  left: 0px;
+  transform: translate(-133.6px, 60.8px);
+  /*5.8, 화면밖넘어감 수정  */
+}
+
+/* profile*/
+.dropdown {
+  position: absolute;
+}
+
+.fa-plus:before,
+.fa-bell:before,
+.fa-user:before {
+  font-size: xx-large;
+  color: #3a3b45;
+}
+
+/**/
+
+/*userbell, profile*/
+
+.right-header {
+  width: 64%;
+  right: 2rem;
+  margin: 1.2rem 2rem 1.2rem 0;
+  display: flex;
+}
+.header-bell {
+  right: 6.8rem;
+}
+
+.header-profile {
+  right: 3rem;
+}
+
+.header-addmemo {
+  padding-top: 0.1rem;
+  position: absolute;
+  right: 10.8rem;
+}
+
+.header-profile,
+.header-bell {
+  position: absolute;
+}
+/**/
 
 /* header btn */
 .header-memo_btn,
@@ -135,7 +205,57 @@ input.profile_input:not(:last-child) {
   border: 1px solid black;
 }
 
+/*//////////////header-searchdiv////////////////////*/
+.search-form {
+  width: 22%;
+  margin: 0 0 0 1rem;
+  display: inline-block !important;
+}
+
+.search {
+  width: auto;
+  display: flex;
+  margin-top: 1.2rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.input-search {
+  flex: 1 1 auto;
+  height: 2.3125rem;
+  border: 0 !important;
+  background-color: #f8f9fc !important;
+  font-size: 0.85rem;
+  padding: 0 0.75rem;
+}
+
+.search-submit {
+  left: -1;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #4e73df;
+  border-color: #4e73df;
+  width: 2rem;
+  border-radius: 0.35rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.fa-hashtag:before {
+  color: #fff;
+  font-size: large;
+}
+/*//////////////header-searchdiv////////////////////*/
+
 /*//////////////header-logodiv////////////////////*/
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .logo-div {
   min-width: 120px;
@@ -143,6 +263,19 @@ input.profile_input:not(:last-child) {
   text-align: center;
 }
 
-/*//////////////header-logodiv////////////////////*/
+.logo {
+  animation: App-logo-spin infinite 20s linear;
+  width: 50px;
+  height: 50px;
+}
 
-/*//////////////header-searchdiv////////////////////*/
+.logo-header-title p {
+  color: #4c71dd;
+  background: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "Product Sans", Arial, sans-serif;
+  padding-top: 0.5rem;
+}
+/*//////////////header-logodiv////////////////////*/

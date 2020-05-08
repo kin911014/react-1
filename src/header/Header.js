@@ -7,36 +7,36 @@ export default class header extends React.Component {
   render() {
     return (
       <div className="header">
-        <div className="logo-div">
+        <div className="header_wrapper">
           <div className="logo-header">
             <img className="logo" src="http://localhost:8090/images/logo.png" />
-          </div>
-          <div className="logo-header-title">
-            <p>ShareEditor.Md</p>
-          </div>
-        </div>
-        <div className="search_div">
-          <form className="search-form" action="">
-            <div className="search">
-              <input
-                type="text"
-                name="input-search"
-                className="input-search"
-                placeholder="검색어를 입력하세요"
-              />
-              <button type="submit" className="search-submit" value="검색">
-                <i className="fas fa-hashtag"></i>
-              </button>
+            <div className="logo-header-title">
+              <p>ShareEditor.Md</p>
             </div>
-          </form>
-        </div>
+          </div>
+          <div className="search_div">
+            <form className="search-form" action="">
+              <div className="search">
+                <input
+                  className="input-search"
+                  type="text"
+                  name="input-search"
+                  placeholder="검색어를 입력하세요"
+                />
+                <button type="submit" className="search-submit" value="검색">
+                  <i className="fas fa-hashtag"></i>
+                </button>
+              </div>
+            </form>
+          </div>
 
-        <div className="right-header">
-          <HeaderAddMemo />
+          <div className="right-header">
+            <HeaderAddMemo />
 
-          <HeaderProfile />
+            <HeaderProfile />
 
-          <Userbell />
+            <Userbell />
+          </div>
         </div>
       </div>
     );
