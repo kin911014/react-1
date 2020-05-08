@@ -17,46 +17,50 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
-}
-.inner_form-container,
-.inner_profile-header {
-  border: 1px solid black;
-  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: center; /*세로 중앙에 자식을 배치*/
-  justify-content: center; /*가로에서 가운데에 자식을 배치*/
 }
 .popup-profile_inner {
-  position: absolute;
-  min-width: 15rem; /**/
-  left: 31%;
-  right: 31%;
-  top: 14%;
-  bottom: 14%;
-  /* margin: auto; */
   background: white;
+  margin: auto;
+  width: 40%;
+  height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
+.inner_form-container,
 .inner_profile-header {
-  color: #4e73df;
-  height: 3rem;
-  max-width: 24rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 가로 중앙에 자식을 배치 */
+  justify-content: center;
+  /* 세로에서 가운데에 자식을 배치 */
+  /* 
   width: 100%;
+  max-width: 24rem; */
+}
+
+.inner_profile-header {
+  /* color: #4e73df;
+  margin: 1rem auto;
+  color: red;
+  height: 15%;
+  margin-bottom: 1rem;
+  margin-top: 1rem; */
 }
 .inner_form-container {
-  margin: 0rem, 2rem;
-  height: 70%;
-  display: flex;
-  flex-direction: block;
-  max-width: 24rem;
-  width: 100%;
+  /* margin: 0rem, 2rem;
+  height: 80%; */
 }
-input.profile_input {
+
+/* input.profile_input {
+  margin: auto;
   border: 1px;
   height: 2.3125rem;
   max-width: 20rem;
@@ -70,3 +74,7 @@ input.profile_input {
 input.profile_input:not(:last-child) {
   margin-bottom: 1.5625rem;
 }
+
+button.profile_btns {
+  height: 2.3125rem;
+} */

@@ -46,8 +46,10 @@ export default class Profile extends React.Component {
               name="email"
               id="email"
             ></input>
-            <button>수정</button>
-            <button onClick={this.props.closePopup}>취소</button>
+            <button className="profile_btns">수정</button>
+            <button className="profile_btns" onClick={this.props.closePopup}>
+              취소
+            </button>
           </div>
         </div>
       </div>
