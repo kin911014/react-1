@@ -9,9 +9,14 @@ export default class header extends React.Component {
       <div className="header">
         <div className="header_wrapper">
           <div className="logo-header">
-            <img className="logo" src="http://localhost:8090/images/logo.png" />
-            <div className="logo-header-title">
-              <p>ShareEditor.Md</p>
+            <div>
+              <img
+                className="logo"
+                src="http://localhost:8090/images/logo.png"
+              />
+              <div className="logo-header-title">
+                <p>ShareEditor.Md</p>
+              </div>
             </div>
           </div>
           <div className="search_div">
