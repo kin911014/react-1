@@ -18,7 +18,11 @@ export default class contents extends React.Component {
             <a href="#">invite</a>
           </div>
         </div>
-        <div className="contents-memo"></div>
+        <div className="contents-memo">
+          <div>
+            <h3>memo</h3>
+          </div>
+        </div>
       </div>
     );
   }
