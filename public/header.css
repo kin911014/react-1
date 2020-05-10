@@ -1,9 +1,10 @@
 .header {
   background-color: #f5f5f5;
-  /* display: flex; */
+  display: flex;
   /* 5.8 수정, 메인 헤더 padding수정  */
   border-bottom: 0.1em solid rgba(0, 0, 0, 0.2);
-  /* flex-flow: row nowrap; */
+  flex-flow: row nowrap;
+  height: 10%;
 }
 
 .header_wrapper {
