@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./header/Header";
-import Sidebar from "./Sidebar";
-import Contents from "./Contents";
-import Footer from "./Footer";
+import Sidebar from "./sidebar/Sidebar";
+import Contents from "./contents/Contents";
+import Footer from "./footer/Footer";
 
 export default class Container extends React.Component {
   render() {

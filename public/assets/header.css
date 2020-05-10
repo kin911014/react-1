@@ -79,7 +79,7 @@
 }
 
 .input-search {
-  height: 2.3125rem;
+  height: 3rem;
   border: 0 !important;
   background-color: #ffffff !important;
   font-size: 0.85rem;
@@ -92,7 +92,7 @@
 
 .search-submit {
   width: 20%;
-  height: 2.3125rem;
+  height: 3rem;
   cursor: pointer;
   border: 1px solid transparent;
   background-color: #4e73df;
@@ -132,6 +132,14 @@
   /*5.8, 화면밖넘어감 수정  */
 }
 
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  text-align: inherit;
+}
+
 /* profile*/
 .dropdown {
   position: relative;
@@ -163,7 +171,7 @@
 /*plus-memo*/
 
 .header-addmemo {
-  margin-right: 1rem;
+  margin-right: 1.8rem;
 }
 
 .popup {
@@ -202,7 +210,7 @@
 /*header-profile*/
 
 .header-profile {
-  margin-right: 1rem;
+  margin-right: 1.8rem;
 }
 
 .popup-profile {
@@ -304,9 +312,13 @@ input.profile_input:not(:last-child) {
 
 /*header-profile*/
 
+/*header-bell*/
+
 .header-bell {
-  margin-right: 1rem;
+  margin-right: 1.8rem;
 }
+
+/*header-bell*/
 
 /* header btn */
 
@@ -317,29 +329,3 @@ input.profile_input:not(:last-child) {
 }
 
 /*///////////right-header////////////*/
-
-/*/////////////////////////////////*/
-
-/*//////////////header-right////////////////////*/
-/* 
-
-
-/**/
-
-/* 
-
-
-
-/* 
-
-  */
-/* 
-*/
-
-/* header profile */
-/*
-
-
-/*
- 
-*/
