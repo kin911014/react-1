@@ -72,8 +72,10 @@
 }
 
 .search {
-  min-width: 300px;
+  min-width: 150px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .input-search {
