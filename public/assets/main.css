@@ -30,7 +30,7 @@ body {
   float: right;
   width: 89%;
   height: 80%;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .contents-header {
   height: 10%;

@@ -1,12 +1,13 @@
 /* sidebar*/
 
 .sidebar {
+  position: relative;
   display: block;
   width: 11%;
-  height: 100%;
+  height: 90%;
   background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
   padding-top: 10px;
-  position: fixed;
+  float: left;
 }
 
 .sidebar li {
